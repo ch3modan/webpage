@@ -1,0 +1,6 @@
+spec:
+  containers:
+    - image: "${docker_image}"
+      name: website
+      ports:
+        - containerPort: 80

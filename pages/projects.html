@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/coin32.gif">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/coin16.gif">
+    <link rel="prefetch" href="assets/cursor-20.png" />
+    <link rel="prefetch" href="assets/cursor-pointer-20.png" />
+    <link rel="prefetch" href="assets/cursor-text-20.png" />
+    <style>
+        body {
+            background-color: #1b1b1b;
+            font-family: 'monospace';
+            margin: 0;
+            cursor: url('assets/cursor-20.png'), auto;
+            padding: 20px;
+            color: #39ff14;
+        }
+
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #39ff14;
+            border-radius: 10px;
+            background: rgba(57, 255, 20, 0.05);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .section h2 {
+            color: #ff00ff;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #39ff14;
+            border-radius: 5px;
+            background: #1b1b1b;
+            color: #39ff14;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #39ff14;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid #39ff14;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            cursor: url('assets/cursor-pointer-20.png'), pointer;
+        }
+
+        .back-button:hover {
+            background: #39ff14;
+            color: #1b1b1b;
+            text-shadow: none;
+        }
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Adjust as needed for vertical spacing */
+        }
+
+        .life {
+            max-width: 100%; /* Ensures the image is responsive */
+            height: auto;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to Home</a>
+    
+    <div class="gif-container">
+        <img src="assets/crueltysquad-cruelty-squad.gif" alt="Life" class="life">
+    </div>
+</body>
+
+</html>

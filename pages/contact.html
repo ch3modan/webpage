@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/coin32.gif">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/coin16.gif">
+    <link rel="prefetch" href="assets/cursor-20.png" />
+    <link rel="prefetch" href="assets/cursor-pointer-20.png" />
+    <link rel="prefetch" href="assets/cursor-text-20.png" />
+    <style>
+        body {
+            background-color: #1b1b1b;
+            font-family: 'monospace';
+            margin: 0;
+            cursor: url('assets/cursor-20.png'), auto;
+            padding: 20px;
+            color: #39ff14;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #39ff14;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #39ff14;
+            border-radius: 10px;
+            background: rgba(57, 255, 20, 0.05);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .section h2 {
+            color: #ff00ff;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #39ff14;
+            border-radius: 5px;
+            background: #1b1b1b;
+            color: #39ff14;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #39ff14;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid #39ff14;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            cursor: url('assets/cursor-pointer-20.png'), pointer;
+        }
+
+        .back-button:hover {
+            background: #39ff14;
+            color: #1b1b1b;
+            text-shadow: none;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to Home</a>
+
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span> <span>Email: cheemsthedoge@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span> <span>Location: Frankfurt am Main, Germany</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span> <span>Phone: +49 174 184 8588</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/coin32.gif">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/coin16.gif">
+    <link rel="prefetch" href="assets/cursor-20.png" />
+    <link rel="prefetch" href="assets/cursor-pointer-20.png" />
+    <link rel="prefetch" href="assets/cursor-text-20.png" />
+    <style>
+        body {
+            background-color: #1b1b1b;
+            font-family: 'monospace';
+            margin: 0;
+            cursor: url('assets/cursor-20.png'), auto;
+            padding: 20px;
+            color: #39ff14;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #39ff14;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #39ff14;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-info h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #39ff14;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #39ff14;
+            border-radius: 10px;
+            background: rgba(57, 255, 20, 0.05);
+        }
+
+        .section h2 {
+            color: #ff00ff;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: rgba(57, 255, 20, 0.1);
+            border: 1px solid #39ff14;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #39ff14;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid #39ff14;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            cursor: url('assets/cursor-pointer-20.png'), pointer;
+        }
+
+        .back-button:hover {
+            background: #39ff14;
+            color: #1b1b1b;
+            text-shadow: none;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to Home</a>
+
+    <div class="about-container">
+        <div class="profile-section">
+            <img src="assets/pfp.jpg" alt="Iaroslav Kosaretskii" class="profile-image">
+            <div class="profile-info">
+                <h1>Iaroslav Kosaretskii</h1>
+                <p>Aspiring Bioinformatician | Programming Enthusiast</p>
+                <div class="contact-info">
+                    
+                    <span class="contact-item">📍 Frankfurt am Main, Germany</span>
+                    <img src="assets/globe2.gif" alt="Globe" style="width: 30px; height: 30px">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>About Me <img src="assets/golfball.gif" alt="Sysyfuss" style="vertical-align: middle; width: 30px; height: 30px;"></h2> 
+            <p>I am a dedicated student pursuing a Bachelor's degree in Bioinformatics at Johann Wolfgang Goethe-University Frankfurt am Main. With a strong foundation in both programming and academic excellence, I bring a blend of technical skills and scientific curiosity to my bioinformatics projects.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">NumPy</span>
+                <span class="skill-item">Pandas</span>
+                <span class="skill-item">Linux Administration</span>
+                <span class="skill-item">Git Version Control</span>
+                <span class="skill-item">HTML/CSS</span>
+                <span class="skill-item">Microsoft Office</span>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <div class="skill-list">
+                <span class="skill-item">Russian (Native)</span>
+                <span class="skill-item">German (C1 - DSH II, DSD 2)</span>
+                <span class="skill-item">English (C1)</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Johann Wolfgang Goethe-University Frankfurt am Main</strong><br>
+            Bachelor in Bioinformatics (2024-2027)</p>
+        </div>
+
+        <div class="section">
+            <h2>Interests & Hobbies</h2>
+            <div class="skill-list">
+                <span class="skill-item">Programming</span>
+                <span class="skill-item">Reading</span>
+                <span class="skill-item">Drums</span>
+                <span class="skill-item">Swimming</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Personal Qualities</h2>
+            <div class="skill-list">
+                <span class="skill-item">Open-minded</span>
+                <span class="skill-item">Disciplined</span>
+                <span class="skill-item">Team Player</span>
+                <span class="skill-item">Performance-oriented</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
